@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">码教授</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li  class="active"><a href="index.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-home"></span> 后台首页</a></li>
+                    <li><a href="admin.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                    <li><a href="cont.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+                    <li><a href="mark.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right visible-lg visible-md visible-xs">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前往首页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-home"></span> 个人主页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav navbar-nav" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-off"></span> 退出
+                        </a>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">退出</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        请问确定退出吗？
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                        <button type="button" class="btn btn-primary">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" data-hover="dropdown">
+                            关注微信号
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation" >
+                                <img src="../images/erweima.png" alt="" class="thumbnail col-md-10 col-md-offset-1">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="">
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4><strong>网站程序有漏洞，急需修复！</strong></h4>
+                <h5>当前版本程序（V1.22)存在严重安全问题，容易造成攻击，请即可修复！</h5>
+                <button class="btn btn-danger">立即修复</button>
+                <button class="btn btn-default" data-dismiss="alert" aria-label="Close">稍后处理</button>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6 table-responsive" >
+                <div class="panel panel-default ">
+                    <div class="panel-heading">网站数据统计 </div>
+                    <div class=" list-group-item">
+                        <table class="table table-hover ">
+                            <thead>
+                                <tr>
+                                    <th>统计项目</th>
+                                    <th>今日</th>
+                                    <th>昨日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">注册会员</th>
+                                <td>200</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">登录会员</th>
+                                <td>4100</td>
+                                <td>5112</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">今日发帖</th>
+                                <td>1540</td>
+                                <td>4511</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">转载次数</th>
+                                <td>150</td>
+                                <td>110</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 table-responsive" >
+                <div class="panel panel-default tab-content">
+                    <div class="panel-heading">网站热帖 </div>
+                    <div class="list-group-item-heading ">
+                        <table class="table ">
+                            <thead>
+                            <tr>
+                                <td><a href=""><span class="glyphicon glyphicon-list-alt"></span> 码教授职业教育,效果和就业为王</a></td>
+                                <td></td>
+                                <td><a href="">2019/04/08</a></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href=""><span class="glyphicon glyphicon-font"></span> 码教授职业教育,效果和就业为王</a></td>
+                                <td></td>
+                                <td><a href="">2019/04/08</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><span class="glyphicon glyphicon-bold"></span> 码教授职业教育,效果和就业为王</a></td>
+                                <td></td>
+                                <td><a href="">2019/04/08</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><span class="glyphicon glyphicon-italic"></span> 码教授职业教育,效果和就业为王</a></td>
+                                <td></td>
+                                <td><a href="">2019/04/08</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><span class="glyphicon glyphicon-facetime-video"></span> 码教授职业教育,效果和就业为王</a></td>
+                                <td></td>
+                                <td><a href="">2019/04/08</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><span class="glyphicon glyphicon-thumbs-up"></span> 码教授职业教育,效果和就业为王</a></td>
+                                <td></td>
+                                <td><a href="">2019/04/08</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">今日访客统计</div>
+                    <div class="panel-body">
+                        <div id="main" style="width:100%;height:300px;"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">服务器状态</div>
+                    <div class="panel-body">
+                        <div class="nav">
+                            <p>内存使用率： 40%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">40% Complete (success)</span>
+                            </div>
+                        </div>
+                        <div class="nav">
+                            <p>数据库使用率： 20%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                        <div class="nav">
+                            <p>硬盘使用率： 60%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="sr-only">60% Complete (warning)</span>
+                            </div>
+                        </div>
+                        <div class="nav">
+                            <p>CPU使用率： 80%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span class="sr-only">80% Complete (danger)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default ">
+                    <div class="panel-heading"><strong>团队留言板</strong></div>
+                    <div class="panel-body">
+                        <div class="col-md-7 ">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-2 pull-left col-xs-5">
+                                            <img src="../images/android.png" alt="" class="img-rounded img-responsive">
+                                        </div>
+                                        <div class="media-body text-left">
+                                            <h4><strong>卓大哥</strong></h4>
+                                            <h5>技术大哥，今晚把网站程序升级一哈,现在的系统有漏洞，安全起见！</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-2 pull-right col-xs-5">
+                                            <img src="../images/ios.png" alt="" class="img-rounded img-responsive">
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4><strong>技术大哥</strong></h4>
+                                            <h5>收到，今晚凌晨两点准时升级</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-2 col-xs-5 pull-right">
+                                            <img src="../images/ios.png" alt="" class="img-rounded img-responsive">
+                                        </div>
+                                        <div class=" media-body text-right">
+                                            <h4><strong>技术大哥</strong></h4>
+                                            <h5>你先在站点发布一下通知哈！</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row ">
+                                        <div class="col-md-2 col-xs-5 pull-left">
+                                            <img class="media-object img-responsive" src="../images/android.png" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 ><strong>卓大哥</strong></h4>
+                                            <h5 >好嘞！</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <form>
+                                <div class="form-group">
+                                    <label for="form-control">输入留言内容</label>
+                                    <textarea class="form-control" id="form-control" rows="3" placeholder="请输入留言"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default">留言</button>
+                            </form>
+                            <br>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">团队联系手册</div>
+                                <div class="panel-body">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td class="">站长(李小龙):&nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;13112345678</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">技术(大牛哥):&nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;13456789011</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">推广(张二哥):&nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;17701020304</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">客服(王女士):&nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;18931312233 &nbsp;&nbsp;<span class="glyphicon glyphicon-phone-alt"></span> &nbsp;&nbsp;028-888888</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h5 class="text-center">
+            Copyright @ 2019 www.tecode.com 码教授
+        </h5>
+    </div>
+
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        // 指定图表的配置项和数据
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    label: {
+                        backgroundColor: '#6a7985'
+                    }
+                }
+            },
+            legend: {
+                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'邮件营销',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {},
+                    data:[120, 132, 101, 134, 90, 230, 210]
+                },
+                {
+                    name:'联盟广告',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {},
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'视频广告',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {},
+                    data:[150, 232, 201, 154, 190, 330, 410]
+                },
+                {
+                    name:'直接访问',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:[320, 332, 301, 334, 390, 330, 320]
+                },
+                {
+                    name:'搜索引擎',
+                    type:'line',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'top'
+                        }
+                    },
+                    areaStyle: {normal: {}},
+                    data:[820, 932, 901, 934, 1290, 1330, 1320]
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+        window.onresize = function () {
+            myChart.resize();
+        };
+    </script>
+
+
+</body>
+</html>

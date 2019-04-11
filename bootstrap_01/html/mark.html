@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">码教授</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-home"></span> 后台首页</a></li>
+                        <li><a href="admin.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                        <li><a href="cont.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+                        <li  class="active"><a href="mark.html" aria-controls="chrome" role="tab"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前往首页</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span> 个人主页</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav navbar-nav" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-off"></span> 退出
+                            </a>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">退出</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            请问确定退出吗？
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary">确定</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" data-hover="dropdown">
+                                关注微信号
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation" >
+                                    <img src="../images/erweima.png" alt="" class="thumbnail col-md-10 col-md-offset-1">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide  " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" >
+                    <img src="../images/1.png" alt="..." class=" " style="width: 1170px;height: 500px;">
+                </div>
+                <div class="item">
+                    <img src="../images/2.png" alt="..." class=" " style="width: 1170px;height: 500px;">
+                </div>
+                <div class="item">
+                    <img src="../images/3.png" alt="..." class=" " style="width: 1170px;height: 500px;">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <b class="text text-uppercase row mt-3">TAG标签管理</b>
+            <hr>
+        </div>
+        <div class="row">
+            <form class="form-group">
+                <div class="form-group col-lg-9">
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                </div>
+                <div class="form-group col-lg-1"><button  class="btn btn-default ">添加</button></div>
+            </form>
+        </div>
+        <div>
+            <div>
+                <button class="alert alert-info alert-dismissible fade in" role="alert">
+                    <strong>bootstrap</strong>
+                    <span class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                </button>
+                &nbsp;
+                <button class="alert alert-info alert-dismissible fade in" role="alert">
+                    <strong>码教授</strong>
+                    <span class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                </button>
+                &nbsp;
+                <button class="alert alert-info alert-dismissible fade in" role="alert">
+                    <strong>前端课程</strong>
+                    <span class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h5 class="text-center">
+            Copyright @ 2019 www.tecode.com 码教授
+        </h5>
+    </div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/echarts.js"></script>
+
+</body>
+</html>
